@@ -69,41 +69,41 @@ li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-li .dropdown {
-  display:inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 80px;
 
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dropdown-content a:hover {
-  background-color: black;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-#topnav ul ul {
-  z-index: 9999;
-  position: absolute;
-  left: -999em;
-  height: auto;
-  width: 170px;
- padding: 5px;
- border-bottom: 1px solid black; 
-}
-#topnav ul ul a {
-  width: 140px;
-}
-#topnav ul ul li {
-  display: inline-block;
+.dropdown-submenu {
   position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
