@@ -1,41 +1,49 @@
 <!DOCTYPE HTML>
 <html>
         <head>
-	    
+	<link rel="stylesheet" href="http://onehackoranother.com/projects/jquery/droppy/stylesheets/droppy.css" type="text/css" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"/></script>
+        <script src="http://onehackoranother.com/projects/jquery/droppy/javascripts/jquery.droppy.js"/></script>    
     <meta charset="utf-8">
     <title>Nathan Thao - Junior developer</title>
     <meta name="description" content="Nathan Thao - Junior developer from DevCodeCamp learning to become a software developer.">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
     <body>
-    <nav class="navbar">
+    <nav class="navbar clear">
         <button type="button">
-        <ul class="nav">
+        <ul id="topnav">
             <li><a class="active" href="index.html">Home</a></li>
             <li class="dropdown"><a class="dropbtn" href="#">About Me</a>
             <div class="dropdown-content">
                 <a href="blog.html">Blog</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">test</a></li>
+                </ul>
                 <a href="thaonk26.github.io">Project PoGo</a>
             </div>
             </li>
         </ul>
         </button>  
     </nav>
+    <script type="text/javascript">
+        $(function() {
+            $'#topnav').droppy();
+        });
+    </script>
     <header class="main-header">
 	<a class="main-logo"></a>
 	    <p>The design work of <a href="http://facebook.com/nathanthao" target="_blank">Nathan Thao</a></p>
         <nav class="navbar main-nav" style="background-color: #F0F0F0 ">
         </nav>
 </header>
-<h2 id="desc">My name is Nathan Thao<br>This site is where I track my progress<br>throughout my learning at DevCodeCamp. </h2>
-    <img id="image" src="images/Klearkraft.png"><img>
+<p id="desc">Week 1<br>This site is where I track my progress<br>throughout my learning at DevCodeCamp. </p>
+    
 
     </body>
 </html>
