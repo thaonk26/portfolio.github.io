@@ -15,12 +15,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
     <body>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <button type="button">
+        <ul class="nav">
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#name">Name</a></li>
+            <li class="dropdown"><a class="dropbtn" href="#">About Me</a>
+            <div class="dropdown-content">
+                <a href="#news">Blog</a>
+                <a href="thaonk26.github.io">Project PoGo</a>
+            </div>
+            </li>
         </ul>
+        </button>  
     </nav>
     <header class="main-header">
 	<a class="main-logo"></a>
